@@ -15,7 +15,8 @@ function createMessage(task, args, kwargs, options, id) {
     var message = {
         task: task,
         args: args,
-        kwargs: kwargs
+        kwargs: kwargs,
+        timelimit: [null, null],
     };
 
     message.id = id || uuid.v4();
